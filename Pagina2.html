@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda</title>
+    <link rel="stylesheet" href="Pagina2.css">
+</head>
+<body>
+<div class="container">
+        <h1>Analizador de Mascotas con <span>Gemini</span></h1>
+        
+        <div class="card">
+            <div class="header-ia">
+                <span class="icon">🐾</span>
+                <h2>IA Pet Analysis</h2>
+            </div>
+
+            <div class="input-group">
+                <label for="apiKey">Tu Gemini API Key:</label>
+                <input type="password" id="apiKey" placeholder="AlzaSy...">
+            </div>
+
+            <div class="content-layout">
+                <div class="sidebar">
+                    <div class="pet-thumb active">
+                        <img src="https://www.faunaencasa.com/wp-content/uploads/2021/06/198919999_185752536810723_4971914811602515136_n-566x566.jpg" alt="Copito">
+                        <p>Copito (Conejo)</p>
+                    </div>
+                    <div class="pet-thumb">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=100&q=80" alt="Mora">
+                        <p>Mora (Gato)</p>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <h3>Tabla de Mascotas (Ejemplo):</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Especie</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="petTable">
+                            <tr onclick="seleccionarMascota('P001', 'Copito', 'Conejo', 'En observación')">
+                                <td>P001</td>
+                                <td>Copito</td>
+                                <td>Conejo</td>
+                                <td>En observación</td>
+                            </tr>
+                            <tr onclick="seleccionarMascota('C001', 'Mora', 'Gato', 'Sano')">
+                                <td>C001</td>
+                                <td>Mora</td>
+                                <td>Gato</td>
+                                <td>Sano</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="ia-result">
+                        <strong>**Análisis de Personalidad Generado por IA:**</strong>
+                        <p id="resultadoIA">Selecciona una mascota de la lista para ver su análisis detallado...</p>
+                    </div>
+                    <button onclick="window.location.href='Pagina3.html'" id="btnIrAdopcion" class="btn-secondary">Continuar con la Adopción de</button>
+                </div>
+            </div>
+
+            <button id="btnAnalizar" class="btn-primary">Solicitar Análisis a Gemini</button>
+        </div>
+    </div>
+
+<script src="Pagina2.js"></script>
+</body>
+</html>
