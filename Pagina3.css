@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body.mobile-bg {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Contenedor tipo pantalla de iPhone */
+.mobile-container {
+    background-color: white;
+    width: 375px;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+/* Encabezado azulado muy claro */
+.header {
+    background-color: #f0faff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0f0f5;
+}
+
+.back-arrow {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.header h1 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Tarjeta de Mascota */
+.pet-card {
+    display: flex;
+    margin: 15px;
+    padding: 10px;
+    background-color: #f0faff;
+    border: 2px solid #333; /* Borde oscuro como en el mockup */
+    border-radius: 4px;
+}
+
+.pet-thumb {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.pet-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Formulario */
+.adoption-form {
+    padding: 15px 25px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Inputs superiores (Gris azulado claro) */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aebfc4;
+    border-radius: 6px;
+    background-color: #ebf2f3;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Textarea (Gris oscuro/verdoso) */
+.input-group textarea {
+    width: 100%;
+    height: 160px;
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #9db1b5; /* Tono grisáceo del mockup */
+    font-size: 14px;
+    color: #1a1a1a;
+    resize: none;
+}
+
+.input-group small {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+/* Botón (Mismo tono que el textarea) */
+.btn-submit {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+    padding: 12px;
+    background-color: #647d81;
+    color: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+.campo-error {
+    border: 2px solid #daf4f5 !important; /* Un azul cian neón */
+    box-shadow: 0 0 10px rgba(0, 251, 255, 0.5); /* Un pequeño brillo */
+    background-color: #f0f7f8 !important; /* Un fondo ligeramente más claro */
+    transition: all 0.3s ease;
+}

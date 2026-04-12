@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.mobile-bg {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.mobile-container {
+    background-color: #e6f7f9; /* Fondo azul clarito del mockup */
+    width: 375px;
+    height: 700px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+/* Encabezado */
+.header-solicitudes {
+    padding: 30px 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-solicitudes h1 {
+    font-size: 22px;
+    color: #333;
+    font-weight: normal;
+}
+
+.user-icon {
+    position: absolute;
+    right: 20px;
+}
+
+.user-icon img {
+    width: 35px;
+    filter: opacity(0.7);
+}
+
+/* Contenedor de lista */
+.list-container {
+    padding: 20px;
+}
+
+/* Tarjeta de Solicitud */
+.request-card {
+    background-color: #8fa2a6; /* Color gris verdoso oscuro */
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    border: 1px solid #7a8d91;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Etiqueta de estado (Badge) */
+.status-badge {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #b2c5c9;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    color: #333;
+    border: 1px solid #777;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pet-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%; /* Imágenes circulares como el mockup */
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #555;
+}
+
+.pet-details h2 {
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.pet-details p {
+    font-size: 14px;
+    color: #222;
+}
+
+/* Footer de la tarjeta */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.icons {
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+.btn-details {
+    background-color: white;
+    border: 1px solid #333;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-details:hover {
+    background-color: #f0f0f0;
+}
